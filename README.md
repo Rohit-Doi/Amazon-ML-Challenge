@@ -32,10 +32,10 @@ We use an ensemble of four models:
 4. **Ridge Regression**: L2 regularization with StandardScaler for robust baseline
 
 ### Ensemble Strategy
-- Simple averaging of model predictions
-- Log transformation of target variable for training
-- Exponential transformation of predictions
-- 5-fold cross-validation for model evaluation
+- Simple averaging of model predictions.
+- Log transformation of target variable for training.
+- Exponential transformation of predictions.
+- 5-fold cross-validation for model evaluation.
 
 ## What is SMAPE?
 
@@ -51,10 +51,10 @@ Where:
 - `n` = Number of observations
 
 ### Key Characteristics:
-- **Symmetric**: Treats overestimation and underestimation equally
-- **Scale-independent**: Works well with different scales of data
-- **Bounded**: Ranges from 0% to 200%, with lower values indicating better predictions
-- **Percentage-based**: Easy to interpret as a percentage error
+- **Symmetric**: Treats overestimation and underestimation equally.
+- **Scale-independent**: Works well with different scales of data.
+- **Bounded**: Ranges from 0% to 200%, with lower values indicating better predictions.
+- **Percentage-based**: Easy to interpret as a percentage error.
 
 ### Why SMAPE?
 Unlike traditional MAPE (Mean Absolute Percentage Error), SMAPE handles cases where actual values are close to zero better, as it uses both actual and predicted values in the denominator. This makes it more suitable for price prediction tasks where prices can vary significantly in magnitude.
